@@ -38,7 +38,7 @@
 
 (defvar kdl-ts-mode--indent-rules
   '((kdl
-     ((parent-is "source_file") column-0 0)
+     ((parent-is "document") column-0 0)
      ((node-is "}") (and parent parent-bol) 0)
      ((parent-is "node_children") parent-bol kdl-ts-mode-indent-offset)))
   "Tree-sitter indent rules for `kdl-ts-mode'.")
