@@ -96,9 +96,9 @@
    :language 'kdl
    :feature 'comment
    :override t
-   '((node (node_comment)) @font-lock-comment-face
-     (node (node_field (node_field_comment)) @font-lock-comment-face)
-     (node_children (node_children_comment)) @font-lock-comment-face))
+   '((node_comment) @font-lock-comment-face
+     (node_field_comment) @font-lock-comment-face
+     (node_children_comment) @font-lock-comment-face))
 
 
   "Tree-sitter font-lock settings for `kdl-ts-mode'.")
